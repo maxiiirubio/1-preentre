@@ -1,0 +1,69 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "1-preentrega",
+    "dateExported": "2023-06-04T16:00:05.677Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "name": "Get all products",
+            "url": "http://localhost:8080/api/products/",
+            "method": "GET"
+        },
+        {
+            "name": "Get all limited products",
+            "url": "http://localhost:8080/api/products?limit=2",
+            "method": "GET",
+            "params": [
+                {
+                    "name": "limit",
+                    "value": "2",
+                    "isPath": false
+                }
+            ]
+        },
+        {
+            "name": "Get all products by id",
+            "url": "http://localhost:8080/api/products/1",
+            "method": "GET"
+        },
+        {
+            "name": "Add new product",
+            "url": "http://localhost:8080/api/products/",
+            "method": "POST",
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"Impresora multifuncional\",\n  \"description\": \"Una impresora multifuncional que también escanea y copia documentos\",\n  \"code\": \"79135\",\n  \"price\": 129.99,\n  \"stock\": 6,\n  \"category\": \"Electrónica\",\n  \"thumbnail\": [\n    \"ruta-imagen-19.jpg\",\n    \"ruta-imagen-20.jpg\"\n  ]\n}"
+            }
+        },
+        {
+            "name": "Update product by Id",
+            "url": "http://localhost:8080/api/products/4",
+            "method": "PUT",
+            "body": {
+                "type": "json",
+                "raw": "{\"thumbnail\": [\n    \"ruta-imagen-19.jpg\"\n  ]\n}"
+            }
+        },
+        {
+            "name": "Delete product by Id",
+            "url": "http://localhost:8080/api/products/4",
+            "method": "DELETE"
+        },
+        {
+            "name": "Creating a new product cart",
+            "url": "http://localhost:8080/api/carts",
+            "method": "POST"
+        },
+        {
+            "name": "Get cart by id",
+            "url": "http://localhost:8080/api/carts/3",
+            "method": "GET"
+        },
+        {
+            "name": "Add the product to the \"products\" array of the cart selected by id",
+            "url": "http://localhost:8080/api/carts/3/product/1",
+            "method": "POST"
+        }
+    ]
+}

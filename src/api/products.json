@@ -1,0 +1,32 @@
+[
+	{
+		"id": 1,
+		"title": "Zapatillas Adidas",
+		"description": "Negro",
+		"price": 15999.99,
+		"code": "54321",
+		"category": "Calzado",
+		"stock": 10,
+		"status": true
+	},
+	{
+		"id": 2,
+		"title": "Zapatillas Nike",
+		"description": "Blanco",
+		"price": 18099.99,
+		"code": "67890",
+		"category": "Calzado",
+		"stock": 5,
+		"status": true
+	},
+	{
+		"id": 3,
+		"title": "Zapatillas Salomon",
+		"description": "Rojo",
+		"price": 12229.99,
+		"code": "13579",
+		"category": "Calzado",
+		"stock": 20,
+		"status": true
+	}
+]
